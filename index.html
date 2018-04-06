@@ -3,10 +3,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>Service Workers</title>
 </head>
 <body>
-  <img src="/samples/snake.jpg" alt="">
+  <div class="report">
+    <div class="report__text">
+      The snake picture has been precached during service wroker initialization. 
+      <br>It will be available the next time we visit the page.
+    </div>
+    <div class="report__action"><button id='add1'>Add Image</button></div>
+  </div>
+  <div class="report">
+    <div class="report__text">
+      The platform picture hasn't been precached. Add this new picture to DOM to make the service worker cache it too. It will be taken from cache next time we require it.
+    </div>
+    <div class="report__action"><button id='add2'>Add Image</button></div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

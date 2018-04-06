@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "static -p 3023"
+    "start": "static -p 3024"
   },
   "repository": {
     "type": "git",
