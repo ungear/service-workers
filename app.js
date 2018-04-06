@@ -20,3 +20,10 @@ add2.onclick = function(){
   document.body.appendChild(img);
 }
 
+add3.onclick = function(){
+  var img = document.createElement("img");
+  img.setAttribute("src", "/samples/bullshit.jpg");
+  document.body.appendChild(img);
+}
+
+

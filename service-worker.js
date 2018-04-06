@@ -21,8 +21,12 @@ self.addEventListener('fetch', function(event) {
     return response || fetch(event.request)
       .then(response => caches.open('v1')
         .then(cache => { 
-          console.log(event.request.url + ' has been added to cache')
-          cache.put(event.request, response.clone()); 
+          if(!response.ok){
+            console.log(event.request.url + ' failed')
+          } else{
+            cache.put(event.request, response.clone()); 
+            console.log(event.request.url + ' has been added to cache')
+          }
           return response;
         }) 
       )
