@@ -7,6 +7,7 @@
   <title>Service Workers</title>
 </head>
 <body>
+  <div>Current service worker version: <span id="currentSwVersionIndicator"></span></div>
   <div class="report">
     <div class="report__text">
       The snake picture has been precached during service wroker initialization. 
@@ -26,6 +27,18 @@
     </div>
     <div class="report__action"><button id='add3'>Add Image</button></div>
   </div>
+  <div class="report">
+    <div class="report__text">
+      Change the curent version of service worker. A new version will be loaded after closing all the pages from this origin
+    </div>
+    <div class="report__action"><button id='swChangeVersion'>Change SW Version</button></div>
+  </div>
+  <div class="report">
+      <div class="report__text">
+        Get a banana image
+      </div>
+      <div class="report__action"><button id='add4'>Banana</button></div>
+    </div>
   <script src="app.js"></script>
 </body>
 </html>
