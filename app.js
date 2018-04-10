@@ -42,3 +42,7 @@ add4.onclick = function(){
   document.body.appendChild(img);
 }
 
+getJson1.onclick = function(){
+  fetch('https://dog.ceo/api/breeds/list/all')
+}
+

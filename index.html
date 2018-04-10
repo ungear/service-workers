@@ -10,7 +10,7 @@
   <div>Current service worker version: <span id="currentSwVersionIndicator"></span></div>
   <div class="report">
     <div class="report__text">
-      The snake picture has been precached during service wroker initialization. 
+      The snake picture has been precached during SW1 service wroker initialization. 
       <br>It will be available the next time we visit the page.
     </div>
     <div class="report__action"><button id='add1'>Add Image</button></div>
@@ -29,16 +29,22 @@
   </div>
   <div class="report">
     <div class="report__text">
-      Change the curent version of service worker. A new version will be loaded after closing all the pages from this origin
+      Change the curent version of service worker. A new version will be loaded after page refreshing. It will be activated and start working after all the page from this origin are closed
     </div>
     <div class="report__action"><button id='swChangeVersion'>Change SW Version</button></div>
   </div>
   <div class="report">
-      <div class="report__text">
-        Get a banana image
-      </div>
-      <div class="report__action"><button id='add4'>Banana</button></div>
+    <div class="report__text">
+      A banana image is precached by SW2 service worker
     </div>
+    <div class="report__action"><button id='add4'>Get Banana</button></div>
+  </div>
+  <div class="report">
+    <div class="report__text">
+      Fetch some JSON data
+    </div>
+    <div class="report__action"><button id='getJson1'>Get Dogs JSON data</button></div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
