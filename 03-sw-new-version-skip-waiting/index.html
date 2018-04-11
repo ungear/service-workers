@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SW skip waiting</title>
+</head>
+<body>
+    <div>Current service worker version: <span id="currentSwVersionIndicator"></span></div>
+    <p style="width: 300px">
+      Change the curent version of service worker. A new version will be loaded after page refreshing. It will be activated immediately.
+    </p>
+    <div class="report__action"><button id='swChangeVersion'>Change SW Version</button></div>
+    <button id='add1'>Add The Snake Image</button>
+    <div id="socket"></div>
+    <script src="app.js"></script>
+</body>
+</html>

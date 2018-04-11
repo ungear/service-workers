@@ -10,50 +10,9 @@
   <ul>
     <li><a href="/01-sw-precached-data">SW with precached data</a></li>
     <li><a href="/02-sw-new-version-wait">Load a new version of SW and wait until it is activated</a></li>
-    <li><a href="#">Load a new version of SW and activate it immediately through .skipWaiting()</a></li>
+    <li><a href="/03-sw-new-version-skip-waiting">Load a new version of SW and activate it immediately through .skipWaiting()</a></li>
     <li><a href="#">Using IndeedDB as a cache</a></li>
+    <li><a href="#">Messages</a></li>
   </ul>
-  
-  <a href="#">Load a new version of SW and wait until it is activated</a>
-  <a href="#">Load a new version of SW and wait until it is activated</a>
-  <div>Current service worker version: <span id="currentSwVersionIndicator"></span></div>
-  <div class="report">
-    <div class="report__text">
-      The snake picture has been precached during SW1 service wroker initialization. 
-      <br>It will be available the next time we visit the page.
-    </div>
-    <div class="report__action"><button id='add1'>Add Image</button></div>
-  </div>
-  <div class="report">
-    <div class="report__text">
-      The platform picture hasn't been precached. Add this new picture to DOM to make the service worker cache it too. It will be taken from cache next time we require it.
-    </div>
-    <div class="report__action"><button id='add2'>Add Image</button></div>
-  </div>
-  <div class="report">
-    <div class="report__text">
-      Let's try to add an image with broken src.
-    </div>
-    <div class="report__action"><button id='add3'>Add Image</button></div>
-  </div>
-  <div class="report">
-    <div class="report__text">
-      Change the curent version of service worker. A new version will be loaded after page refreshing. It will be activated and start working after all the page from this origin are closed
-    </div>
-    <div class="report__action"><button id='swChangeVersion'>Change SW Version</button></div>
-  </div>
-  <div class="report">
-    <div class="report__text">
-      A banana image is precached by SW2 service worker
-    </div>
-    <div class="report__action"><button id='add4'>Get Banana</button></div>
-  </div>
-  <div class="report">
-    <div class="report__text">
-      Fetch some JSON data
-    </div>
-    <div class="report__action"><button id='getJson1'>Get Dogs JSON data</button></div>
-  </div>
-  <script src="app.js"></script>
 </body>
 </html>
